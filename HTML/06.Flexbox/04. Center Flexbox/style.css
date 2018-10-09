@@ -1,0 +1,17 @@
+body {
+    background: rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background: rgb(255, 255, 255);
+    border-radius: 0.3rem;
+    overflow: hidden;
+    width: 28%;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
+    margin: 2rem;
+}
