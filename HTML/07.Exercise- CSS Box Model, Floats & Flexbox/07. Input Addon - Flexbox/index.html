@@ -1,28 +1,39 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>Input Addon - Flexbox</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="typography.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
 <form>
-    <div class="login">
-        Login
-    </div>
-    <label>
-        Username
-        <i class="fas fa-user"></i>
-        <input type="text">
-    </label>
-    <label>
-        Password
-        <i class="fas fa-key"></i>
-        <input type="password">
-    </label>
-    <label>
-        <input type="submit" value="Login">
-    </label>
+    <fieldset>
+        <legend>Login</legend>
+
+        <p class="field">
+            <label for="password">Username</label>
+            <span class="input">
+                <input type="text" name="username" id="username" />
+                <span class="actions"></span>
+                <i class="fas fa-user"></i>
+            </span>
+        </p>
+
+        <p class="field">
+            <label for="password">Password</label>
+            <span class="input">
+                <input type="password" name="password" id="password" />
+                <span class="actions"></span>
+                <i class="fas fa-key"></i>
+            </span>
+        </p>
+
+        <input type="submit" class="submit" value="Login"/>
+    </fieldset>
 </form>
 </body>
 </html>
