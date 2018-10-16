@@ -1,0 +1,60 @@
+@import url('https://use.fontawesome.com/releases/v5.4.1/css/all.css');
+
+.normal {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    border-radius: 33px;
+    padding: 7px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 10px;
+    cursor: pointer;
+}
+
+.filled {
+     background-color: black;
+     border: 2px solid black;
+     color: white;
+     border-radius: 33px;
+     padding: 7px 28px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin: 4px 10px;
+     cursor: pointer;
+ }
+
+.icons {
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+    border-radius: 33px;
+    padding: 7px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 10px;
+    cursor: pointer;
+}
+
+.icons:hover {
+    background: green;
+    color: white;
+    border-color: green;
+}
+
+.filled:hover {
+    background: green;
+    color: white;
+    border-color: green;
+}
+
+.normal:hover {
+    border-color: green;
+    color: green;
+}

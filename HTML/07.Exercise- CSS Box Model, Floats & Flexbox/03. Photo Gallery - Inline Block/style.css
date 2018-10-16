@@ -1,0 +1,22 @@
+body {
+    background: #EEE;
+    text-align: center;
+}
+
+/*.gallery {*/
+    /*width: 70%;*/
+/*}*/
+
+li {
+    background: white;
+    padding: 6px;
+    border: 2px solid black;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 7px;
+}
+
+.resize-image img {
+    width: 300px;
+}
+

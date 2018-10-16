@@ -1,0 +1,21 @@
+body {
+    background: #EEE;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+li {
+    background: white;
+    padding: 6px;
+    border: 2px solid black;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 7px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
