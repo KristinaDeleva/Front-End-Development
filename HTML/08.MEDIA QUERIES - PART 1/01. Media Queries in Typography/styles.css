@@ -1,0 +1,29 @@
+@import "typography.css";
+@import "layout.css";
+
+body {
+	padding: 2em;
+	background: #EEE;
+}
+
+.page {
+	max-width: 75rem;
+	margin: 0 auto;
+}
+
+.page > header:first-of-type {
+	border-bottom: 2px solid #000;
+}
+
+header .site-title {
+	display: inline-block;
+	min-width: 20vw;
+	font-weight: bold;
+	font-size: 3rem;
+	text-transform: uppercase;
+}
+
+aside a {
+	text-decoration: none;
+	color: #090;
+}
