@@ -1,0 +1,92 @@
+@import url('https://use.fontawesome.com/releases/v5.4.1/css/all.css');
+@import "reset.css";
+@import "typography.css";
+
+i {
+    color: #000;
+    display: inline-block;
+    position: relative;
+}
+
+a.images:hover {
+    box-shadow: none;
+}
+
+a.images:hover i.fa-facebook {
+    color: blue;
+}
+
+a.images:hover i.fa-twitter {
+    color: deepskyblue;
+}
+
+a.images:hover i.fa-google-plus {
+    color: red;
+}
+
+a.images:hover i.fa-linkedin {
+    color: royalblue;
+}
+
+a.images:hover i.fa-instagram {
+    color: lightblue;
+}
+
+.wrapper {
+    margin: auto;
+    max-width: 25rem;
+    margin-top: 40vh;
+    display: flex;
+}
+
+.list-people {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.list-people li {
+    display: block;
+    list-style: none;
+    flex: 0 0 1rem;
+    text-align: center;
+}
+
+.list-people .images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem 0.5rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0.2rem 1rem 0 rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+    background: #EEE;
+}
+
+.list-people .images:before,
+.list-people .images:after {
+    display: block;
+    content: '';
+}
+
+.list-people .images:before {
+    padding-top: 100%;
+}
+
+.list-people .images:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5) inset;
+}
+

@@ -1,0 +1,34 @@
+.page {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.page header {
+	flex: 1 0 100%;
+}
+
+.page main {
+	/*width: 70%;*/
+	flex: 1 0 40rem;
+}
+
+.page aside {
+	/*width: 30%;*/
+	flex: 1 0 20rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: flex-start;
+}
+
+.page aside section {
+	flex: 1 0 15rem;
+}
+
+main article {
+	padding-right: 2rem;
+}
+
+aside section {
+	padding-left: 4rem;
+}

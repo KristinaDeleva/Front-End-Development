@@ -1,0 +1,34 @@
+@import "typography.css";
+@import "reset.css";
+
+body {
+    background: #EEE;
+    padding: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+    table thead {
+        display: none;
+    }
+    table,
+    table tbody,
+    table tr, table td {
+        display: block;
+    }
+    table tr:nth-child(2) {
+        background: #FFF;
+    }
+    /*table tr {*/
+        /*border: 2px solid black;*/
+    /*}*/
+    table tbody td:before {
+        display: inline-block;
+        width: 6.5rem;
+        font-weight: bold;
+        text-align: left;
+        padding-left: 0.5rem;
+        white-space: nowrap;
+        content: attr(data-attr);
+    }
+}
+
