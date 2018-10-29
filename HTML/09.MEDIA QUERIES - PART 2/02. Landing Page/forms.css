@@ -38,10 +38,19 @@ form label {
     font-weight: bold;
 }
 
+.field {
+    display: flex;
+}
+
 .field .input {
     display: flex;
     position: relative;
     align-items: center;
+    flex: 1 0 auto;
+}
+
+.field .input + * {
+    margin-left: 1rem;
 }
 
 .field .input:after {
@@ -70,19 +79,19 @@ form label {
 .field .input input + .actions {
     display: block;
     background: #FFF;
-    border: 1px solid #CCC;
-    border-radius: 0.3rem;
+    border: 2px solid #333;
+    border-radius: 0.2rem;
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     z-index: 1;
 }
 
 .field .input input:focus + .actions {
-    border-color: #090;
+    border-color: purple;
 }
 
 .field .input input:focus + .actions + .fas {
-    color: #090;
+    color: purple;
 }
 
 @media screen and (min-width: 800px) {

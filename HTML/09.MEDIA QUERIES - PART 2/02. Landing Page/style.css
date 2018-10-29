@@ -1,0 +1,166 @@
+@import url("https://use.fontawesome.com/releases/v5.4.1/css/all.css");
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Merriweather:400,400i,700,700i&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700');
+
+@import "reset.css";
+@import "typography.css";
+@import "button.css";
+@import "forms.css";
+
+@import "navigation.css";
+@import "elements.css";
+
+body {
+    background-color: #edebee;
+}
+
+.wrapper {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.site-header p,
+.site-footer p {
+    padding: 0;
+    margin: 0;
+}
+
+.site-header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.site-header .site-title a {
+    display: block;
+    text-decoration: none;
+    color: purple;
+    font-size: 2.5rem;
+}
+
+.site-header .site-description {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.055em;
+}
+
+.site-footer .wrapper {
+    padding-bottom: 2rem;
+}
+
+.site-footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+.site-footer li {
+    list-style: none;
+    display: block;
+}
+
+.site-footer .about {
+    flex: 0 0 30%;
+}
+
+@media screen and (min-width: 800px) {
+    .site-footer .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.site-footer .sitemap a {
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+}
+
+.site-footer .sitemap a:hover {
+    color: purple;
+}
+
+.site-footer .contacts ul li:hover {
+    color: purple;
+}
+
+/*Sections - Headers */
+
+.site > section  header h2 {
+    margin-top: 0;
+}
+
+.site > section  header { /*the centered: team, the centered call-to-action and testimonials */
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.site > section  header:after {
+    display: block;
+    margin: 0 auto 2rem auto;
+    width: 5rem;
+    height: 0.2rem;
+    content: '';
+    background: #333;
+}
+
+/*Sections - call-to-actions */
+section.call-to-action {
+
+}
+
+section.call-to-action .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+section.call-to-action .copy {
+    flex: 1 0 100%;
+    text-align: center;
+}
+
+section.call-to-action i.fas {
+    display: none;
+}
+
+@media screen and (min-width: 800px) {
+
+    section.call-to-action .copy {
+        margin-right: 2rem;
+        text-align: left;
+        flex: 0 0 35rem;
+    }
+
+    section.call-to-action i.fas {
+        display: block;
+        font-size: 9rem;
+    }
+}
+/*Sections - team */
+section.team {
+
+}
+
+/*Sections - newsletter */
+section.newsletter {
+    background: #68347B;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    color: #FFF;
+}
+
+section.newsletter .button {
+    background: #FFF;
+}
+
+section.testimonials {
+    background-color: #edebee;
+    box-shadow: 0 0 2rem 0.1rem rgba(0, 0, 0, 0.3);
+}
+
